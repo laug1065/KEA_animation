@@ -1,17 +1,23 @@
 body {
     margin: 0;
-background: black;
+    background: black;
     overflow-x: hidden;
     overflow-y: hidden;
 }
 
+.hide {
+
+    display: none;
+}
+
 #screen {
-    background-size: cover;
-    width: 100%;
+    background-size: 100%;
+    width: 100vw;
     height: 56.25vw;
     margin: auto;
     position: relative;
     z-index: 0;
+    background-repeat: no-repeat;
 
 
 }
@@ -19,38 +25,45 @@ background: black;
 
 #menu_background {
     background-image: url(Faerdige_svgfiler/titelscreenbaggrund.svg);
-    background-size: cover;
-    height: 100%;
-    width: 50vw;
+    background-size: 100%;
+    width: 100vw;
+    height: 56.25vw;
     margin: auto;
     position: absolute;
     z-index: 1;
-      display: none;
+    background-repeat: no-repeat;
+
 }
 
-#menu_foreground {
-    background-image: url(Faerdige_svgfiler/titelscreen.svg);
-    background-size: cover;
-    height: 100%;
-    width: 56.25vw;
+
+#oelkasse {
+    background-image: url(Faerdige_svgfiler/%C3%98lkasse.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 45vw;
+    width: 24vw;
     margin: auto;
     position: absolute;
-    z-index: 1;
-      display: none;
+    z-index: 3;
+    top: 36.6vw;
+    left: 26vw;
+
 }
+
+
 
 #menu_foreground_start {
     background-image: url(Faerdige_svgfiler/Startknap.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     height: 45vw;
-    width: 15vw;
+    width: 18vw;
     margin: auto;
     position: absolute;
-    z-index: 1;
-    top: 37.7vw;
-    left: 23.3vw;
-      display: none;
+    z-index: 4;
+    top: 47.5vw;
+    left: 29.15vw;
+
 }
 
 #menu_foreground_settings {
@@ -58,19 +71,52 @@ background: black;
     background-size: 100%;
     background-repeat: no-repeat;
     height: 45vw;
-    width: 5.05vw;
+    width: 7vw;
     margin: auto;
     position: absolute;
     z-index: 1;
-    top: 0.4vw;
-    left: 0.5vw;
-    display: none;
+    top: 0.3vw;
+    left: 0.1vw;
+
 
 }
 
+
+
+#vejskilt {
+    background-image: url(Faerdige_svgfiler/%C3%98leller%C3%B8vskilt.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 45vw;
+    width: 38vw;
+    margin: auto;
+    position: absolute;
+    z-index: 2;
+    top: 11vw;
+    left: 24vw;
+
+
+}
+
+#karakter {
+    background-image: url(Faerdige_svgfiler/Karakteren.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 45vw;
+    width: 24vw;
+    margin: auto;
+    position: absolute;
+    z-index: 2;
+    top: 11.2vw;
+    left: 54vw;
+
+
+}
+
+
 #game {
-    background-size: cover;
-    width: 100%;
+    background-size: 100%;
+    width: 100vw;
     height: 56.25vw;
     margin: auto;
     position: relative;
@@ -80,8 +126,8 @@ background: black;
 }
 
 #game_background {
-     background-image: url(Faerdige_svgfiler/Spilsk%C3%A6rmbaggrund2.svg);
-    background-size:cover;
+    background-image: url(Faerdige_svgfiler/Spilsk%C3%A6rmbaggrund2.svg);
+    background-size: cover;
     width: 100%;
     height: 56.25vw;
 
@@ -92,22 +138,22 @@ background: black;
 }
 
 #game_middleground {
-    background-image: url(Faerdige_svgfiler/%C3%98lkassebaggrund.svg);
+    background-image: url(Faerdige_svgfiler/Beercrate_background.svg);
     background-size: 100%;
     background-repeat: no-repeat;
-    width: 48.8vw;
+    width: 46.7vw;
     height: 53vw;
     margin: auto;
     position: absolute;
     z-index: 1;
-    top:5.2vw;
-    left: 28vw;
+    top: 5.039vw;
+    left: 29.9vw;
 
 
 }
 
 #game_foreground {
-    background-image: url(Faerdige_svgfiler/%C3%98lkasseforgrund.svg);
+    background-image: url(Faerdige_svgfiler/Beercrate_foreground.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 48.8vw;
@@ -115,7 +161,7 @@ background: black;
     margin: auto;
     position: absolute;
     z-index: 3;
-    top:5vw;
+    top: 5vw;
     left: 28vw;
 
 
@@ -131,7 +177,7 @@ background: black;
     margin: auto;
     position: absolute;
     z-index: 4;
-    top:34.45vw;
+    top: 34.45vw;
     left: 24.6vw;
 
 }
@@ -145,14 +191,14 @@ background: black;
     margin: auto;
     position: absolute;
     z-index: 4;
-    top:39.9vw;
+    top: 39.9vw;
     left: 62.3vw;
     transform: scaleX(-1);
 
 }
 
 #game_elements {
-     background-size: cover;
+    background-size: cover;
     width: 100%;
     height: 56.25vw;
     margin: auto;
@@ -164,7 +210,7 @@ background: black;
 
 
 #oel1 {
-     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 8vw;
@@ -172,13 +218,16 @@ background: black;
     margin: auto;
     position: absolute;
     z-index: 3;
-    top:27vw;
+    top: 27vw;
     left: 45vw;
 
 
+
+
 }
+
 #oel2 {
-     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 8vw;
@@ -186,13 +235,14 @@ background: black;
     margin: auto;
     position: absolute;
     z-index: 2;
-    top:25vw;
+    top: 25vw;
     left: 42vw;
 
 
 }
+
 #oel3 {
-     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 8vw;
@@ -200,13 +250,15 @@ background: black;
     margin: auto;
     position: absolute;
     z-index: 1;
-    top:22vw;
+    top: 22vw;
     left: 39vw;
 
 
+
 }
+
 #oel4 {
-     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-image: url(Faerdige_svgfiler/Halv%C3%B8l.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 8vw;
@@ -214,13 +266,14 @@ background: black;
     margin: auto;
     position: absolute;
     z-index: 0;
-    top:18.7vw;
+    top: 18.7vw;
     left: 36vw;
 
 
 }
+
 #oel5 {
-     background-image: url(Faerdige_svgfiler/Halv%C3%B8l.svg);
+    background-image: url(Faerdige_svgfiler/Halv%C3%B8l.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 9vw;
@@ -228,13 +281,14 @@ background: black;
     margin: auto;
     position: absolute;
     z-index: -1;
-    top:15vw;
+    top: 15vw;
     left: 32vw;
 
 
 }
+
 #oel6 {
-     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 8vw;
@@ -242,13 +296,14 @@ background: black;
     margin: auto;
     position: absolute;
     z-index: 3;
-    top:25.4vw;
+    top: 25.4vw;
     left: 49.5vw;
 
 
 }
+
 #oel7 {
-     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 8vw;
@@ -256,13 +311,14 @@ background: black;
     margin: auto;
     position: absolute;
     z-index: 1;
-    top:23vw;
+    top: 23vw;
     left: 46vw;
 
 
 }
+
 #oel8 {
-     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 8vw;
@@ -270,13 +326,14 @@ background: black;
     margin: auto;
     position: absolute;
     z-index: 0;
-    top:20vw;
+    top: 20vw;
     left: 42.8vw;
 
 
 }
+
 #oel9 {
-     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 8vw;
@@ -284,13 +341,14 @@ background: black;
     margin: auto;
     position: absolute;
     z-index: -1;
-    top:16.5vw;
+    top: 16.5vw;
     left: 39.6vw;
 
 
 }
+
 #oel10 {
-     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 8vw;
@@ -298,13 +356,14 @@ background: black;
     margin: auto;
     position: absolute;
     z-index: -2;
-    top:13.5vw;
+    top: 13.5vw;
     left: 36.5vw;
 
 
 }
+
 #oel11 {
-     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 8vw;
@@ -312,13 +371,14 @@ background: black;
     margin: auto;
     position: absolute;
     z-index: 2;
-    top:24vw;
+    top: 24vw;
     left: 53.7vw;
 
 
 }
+
 #oel12 {
-     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 8vw;
@@ -326,13 +386,14 @@ background: black;
     margin: auto;
     position: absolute;
     z-index: 1;
-    top:21.4vw;
+    top: 21.4vw;
     left: 50vw;
 
 
 }
+
 #oel13 {
-     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 8vw;
@@ -340,14 +401,15 @@ background: black;
     margin: auto;
     position: absolute;
     z-index: 0;
-    top:18.5vw;
+    top: 18.5vw;
     left: 47vw;
 
 
 
 }
+
 #oel14 {
-     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 8vw;
@@ -355,13 +417,14 @@ background: black;
     margin: auto;
     position: absolute;
     z-index: -1;
-    top:15vw;
+    top: 15vw;
     left: 44vw;
 
 
 }
+
 #oel15 {
-     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 8vw;
@@ -369,13 +432,14 @@ background: black;
     margin: auto;
     position: absolute;
     z-index: -2;
-    top:11.8vw;
+    top: 11.8vw;
     left: 41vw;
 
 
 }
+
 #oel16 {
-     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 8vw;
@@ -383,13 +447,14 @@ background: black;
     margin: auto;
     position: absolute;
     z-index: 1;
-    top:22.2vw;
+    top: 22.2vw;
     left: 57.5vw;
 
 
 }
+
 #oel17 {
-     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 8vw;
@@ -397,13 +462,14 @@ background: black;
     margin: auto;
     position: absolute;
     z-index: 0;
-    top:19.6vw;
+    top: 19.6vw;
     left: 54vw;
 
 
 }
+
 #oel18 {
-     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 8vw;
@@ -411,13 +477,14 @@ background: black;
     margin: auto;
     position: absolute;
     z-index: -1;
-    top:16.8vw;
+    top: 16.8vw;
     left: 50.9vw;
 
 
 }
+
 #oel19 {
-     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 8vw;
@@ -425,13 +492,14 @@ background: black;
     margin: auto;
     position: absolute;
     z-index: -2;
-    top:13.5vw;
+    top: 13.5vw;
     left: 47.8vw;
 
 
 }
+
 #oel20 {
-     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 8vw;
@@ -439,13 +507,14 @@ background: black;
     margin: auto;
     position: absolute;
     z-index: -3;
-    top:10vw;
+    top: 10vw;
     left: 44.8vw;
 
 
 }
+
 #oel21 {
-     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 8vw;
@@ -453,13 +522,14 @@ background: black;
     margin: auto;
     position: absolute;
     z-index: 0;
-    top:21vw;
+    top: 21vw;
     left: 61.3vw;
 
 
 }
+
 #oel22 {
-     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 8vw;
@@ -467,13 +537,14 @@ background: black;
     margin: auto;
     position: absolute;
     z-index: -1;
-    top:18vw;
+    top: 18vw;
     left: 58vw;
 
 
 }
+
 #oel23 {
-     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 8vw;
@@ -481,13 +552,14 @@ background: black;
     margin: auto;
     position: absolute;
     z-index: -2;
-    top:15.1vw;
+    top: 15.1vw;
     left: 55vw;
 
 
 }
+
 #oel24 {
-     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 8vw;
@@ -495,14 +567,14 @@ background: black;
     margin: auto;
     position: absolute;
     z-index: -3;
-    top:12.1vw;
+    top: 12.1vw;
     left: 52vw;
 
 
 }
 
 #oel25 {
-     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 8vw;
@@ -510,7 +582,7 @@ background: black;
     margin: auto;
     position: absolute;
     z-index: -4;
-    top:8.8vw;
+    top: 8.8vw;
     left: 48.7vw;
 
 
@@ -526,7 +598,7 @@ background: black;
     margin: auto;
     position: absolute;
     z-index: 1;
-    top:8.8vw;
+    top: 8.8vw;
     left: 85vw;
 
 
@@ -535,7 +607,7 @@ background: black;
 
 
 #game_ui {
-   background-size: cover;
+    background-size: cover;
     width: 100%;
     height: 10vw;
     margin: auto;
@@ -579,6 +651,7 @@ background: black;
 
 
 }
+
 #heart3 {
     background-image: url(Faerdige_svgfiler/Hjerte.svg);
     background-size: 100%;
@@ -598,7 +671,7 @@ background: black;
 
 
 #oelpoint {
-      background-image: url(Faerdige_svgfiler/Flaskeelefant.svg);
+    background-image: url(Faerdige_svgfiler/Flaskeelefant.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 2.7vw;
@@ -609,4 +682,220 @@ background: black;
     top: 8vw;
     left: 5vw;
 
+}
+
+#timer {
+    font-family: 'Source Sans Pro', sans-serif;
+
+    font-size: 5vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 2.7vw;
+    height: 53vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top: 5vw;
+    left: 9vw;
+    color: white
+}
+
+#tekst {
+
+    font-family: 'Source Sans Pro', sans-serif;
+
+    font-size: 5vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 2.7vw;
+    height: 53vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top: -4.5vw;
+    left: 82.2vw;
+    color: white
+}
+
+#settings {
+
+    background-size: 100%;
+    width: 100vw;
+    height: 56.25vw;
+    margin: auto;
+    position: relative;
+    z-index: 0;
+
+}
+
+#settingsmenubaggrund {
+
+    background-image: url(Faerdige_svgfiler/Spilsk%C3%A6rmbaggrund2.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 56.25vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+}
+
+#settingsmenu {
+
+    background-image: url(Faerdige_svgfiler/Settings.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 35vw;
+    height: 56.25vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top: -0.4vw;
+    left: 30vw;
+}
+
+#exit {
+
+    background-image: url(Faerdige_svgfiler/exit.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 6vw;
+    height: 56.25vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top: 0.5vw;
+    left: 0.5vw;
+
+}
+
+#checkmark1 {
+
+    background-image: url(Faerdige_svgfiler/checkmark.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 9vw;
+    height: 56.25vw;
+    margin: auto;
+    position: absolute;
+    z-index: 3;
+    top: 30vw;
+    left: 31vw;
+
+}
+
+#checkmark2 {
+
+    background-image: url(Faerdige_svgfiler/checkmark.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 9vw;
+    height: 56.25vw;
+    margin: auto;
+    position: absolute;
+    z-index: 3;
+    top: 16vw;
+    left: 31vw;
+
+}
+
+#gameover {
+
+    background-size: 100%;
+    width: 100vw;
+    height: 56.25vw;
+    margin: auto;
+    position: relative;
+    z-index: 0;
+}
+
+/*
+#spilbaggrund {
+
+    background-image: url(Faerdige_svgfiler/Spilsk%C3%A6rmbaggrund.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 56.25vw;
+    margin: auto;
+    position: absolute;
+}*/
+
+
+#gameoverskilt {
+
+    background-image: url(Faerdige_svgfiler/Gameover.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 85vw;
+    height: 56.25vw;
+    margin: auto;
+    position: absolute;
+    z-index: 3;
+    top: 7vw;
+    left: 15.5vw
+}
+
+
+#vinder {
+
+    background-image: url(Faerdige_svgfiler/Vinderskilt.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 85vw;
+    height: 56.25vw;
+    margin: auto;
+    position: absolute;
+    z-index: 3;
+    top: 7vw;
+    left: 15.5vw
+}
+
+.fade_in {
+
+    animation-name: fade_in_kf;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+
+
+}
+
+
+@keyframes fade_in_kf {
+    0% {
+
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+
+
+
+.fade_out {
+
+    animation-name: fade_out_kf;
+    animation-duration: 1s;
+
+    animation-iteration-count: 1;
+
+
+
+}
+
+
+@keyframes fade_out_kf {
+    100% {
+
+        opacity: 0;
+    }
+
+    0% {
+        opacity: 1;
+
+    }
 }

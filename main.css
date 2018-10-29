@@ -1,0 +1,612 @@
+body {
+    margin: 0;
+background: black;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#screen {
+    background-size: cover;
+    width: 100%;
+    height: 56.25vw;
+    margin: auto;
+    position: relative;
+    z-index: 0;
+
+
+}
+
+
+#menu_background {
+    background-image: url(Faerdige_svgfiler/titelscreenbaggrund.svg);
+    background-size: cover;
+    height: 100%;
+    width: 50vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+      display: none;
+}
+
+#menu_foreground {
+    background-image: url(Faerdige_svgfiler/titelscreen.svg);
+    background-size: cover;
+    height: 100%;
+    width: 56.25vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+      display: none;
+}
+
+#menu_foreground_start {
+    background-image: url(Faerdige_svgfiler/Startknap.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 45vw;
+    width: 15vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top: 37.7vw;
+    left: 23.3vw;
+      display: none;
+}
+
+#menu_foreground_settings {
+    background-image: url(Faerdige_svgfiler/settingsikon.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 45vw;
+    width: 5.05vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top: 0.4vw;
+    left: 0.5vw;
+    display: none;
+
+}
+
+#game {
+    background-size: cover;
+    width: 100%;
+    height: 56.25vw;
+    margin: auto;
+    position: relative;
+    z-index: 0;
+
+
+}
+
+#game_background {
+     background-image: url(Faerdige_svgfiler/Spilsk%C3%A6rmbaggrund2.svg);
+    background-size:cover;
+    width: 100%;
+    height: 56.25vw;
+
+    margin: auto;
+    position: absolute;
+    z-index: 0;
+
+}
+
+#game_middleground {
+    background-image: url(Faerdige_svgfiler/%C3%98lkassebaggrund.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 48.8vw;
+    height: 53vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top:5.2vw;
+    left: 28vw;
+
+
+}
+
+#game_foreground {
+    background-image: url(Faerdige_svgfiler/%C3%98lkasseforgrund.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 48.8vw;
+    height: 53vw;
+    margin: auto;
+    position: absolute;
+    z-index: 3;
+    top:5vw;
+    left: 28vw;
+
+
+}
+
+
+#game_foreground_graes1 {
+    background-image: url(Faerdige_svgfiler/Gr%C3%A6s.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 20vw;
+    height: 53vw;
+    margin: auto;
+    position: absolute;
+    z-index: 4;
+    top:34.45vw;
+    left: 24.6vw;
+
+}
+
+#game_foreground_graes2 {
+    background-image: url(Faerdige_svgfiler/Gr%C3%A6s.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 19vw;
+    height: 53vw;
+    margin: auto;
+    position: absolute;
+    z-index: 4;
+    top:39.9vw;
+    left: 62.3vw;
+    transform: scaleX(-1);
+
+}
+
+#game_elements {
+     background-size: cover;
+    width: 100%;
+    height: 56.25vw;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+
+}
+
+
+
+#oel1 {
+     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 53vw;
+    margin: auto;
+    position: absolute;
+    z-index: 3;
+    top:27vw;
+    left: 45vw;
+
+
+}
+#oel2 {
+     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 53vw;
+    margin: auto;
+    position: absolute;
+    z-index: 2;
+    top:25vw;
+    left: 42vw;
+
+
+}
+#oel3 {
+     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 53vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top:22vw;
+    left: 39vw;
+
+
+}
+#oel4 {
+     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 53vw;
+    margin: auto;
+    position: absolute;
+    z-index: 0;
+    top:18.7vw;
+    left: 36vw;
+
+
+}
+#oel5 {
+     background-image: url(Faerdige_svgfiler/Halv%C3%B8l.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 9vw;
+    height: 53vw;
+    margin: auto;
+    position: absolute;
+    z-index: -1;
+    top:15vw;
+    left: 32vw;
+
+
+}
+#oel6 {
+     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 53vw;
+    margin: auto;
+    position: absolute;
+    z-index: 3;
+    top:25.4vw;
+    left: 49.5vw;
+
+
+}
+#oel7 {
+     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 53vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top:23vw;
+    left: 46vw;
+
+
+}
+#oel8 {
+     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 53vw;
+    margin: auto;
+    position: absolute;
+    z-index: 0;
+    top:20vw;
+    left: 42.8vw;
+
+
+}
+#oel9 {
+     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 53vw;
+    margin: auto;
+    position: absolute;
+    z-index: -1;
+    top:16.5vw;
+    left: 39.6vw;
+
+
+}
+#oel10 {
+     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 53vw;
+    margin: auto;
+    position: absolute;
+    z-index: -2;
+    top:13.5vw;
+    left: 36.5vw;
+
+
+}
+#oel11 {
+     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 53vw;
+    margin: auto;
+    position: absolute;
+    z-index: 2;
+    top:24vw;
+    left: 53.7vw;
+
+
+}
+#oel12 {
+     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 53vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top:21.4vw;
+    left: 50vw;
+
+
+}
+#oel13 {
+     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 53vw;
+    margin: auto;
+    position: absolute;
+    z-index: 0;
+    top:18.5vw;
+    left: 47vw;
+
+
+
+}
+#oel14 {
+     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 53vw;
+    margin: auto;
+    position: absolute;
+    z-index: -1;
+    top:15vw;
+    left: 44vw;
+
+
+}
+#oel15 {
+     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 53vw;
+    margin: auto;
+    position: absolute;
+    z-index: -2;
+    top:11.8vw;
+    left: 41vw;
+
+
+}
+#oel16 {
+     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 53vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top:22.2vw;
+    left: 57.5vw;
+
+
+}
+#oel17 {
+     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 53vw;
+    margin: auto;
+    position: absolute;
+    z-index: 0;
+    top:19.6vw;
+    left: 54vw;
+
+
+}
+#oel18 {
+     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 53vw;
+    margin: auto;
+    position: absolute;
+    z-index: -1;
+    top:16.8vw;
+    left: 50.9vw;
+
+
+}
+#oel19 {
+     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 53vw;
+    margin: auto;
+    position: absolute;
+    z-index: -2;
+    top:13.5vw;
+    left: 47.8vw;
+
+
+}
+#oel20 {
+     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 53vw;
+    margin: auto;
+    position: absolute;
+    z-index: -3;
+    top:10vw;
+    left: 44.8vw;
+
+
+}
+#oel21 {
+     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 53vw;
+    margin: auto;
+    position: absolute;
+    z-index: 0;
+    top:21vw;
+    left: 61.3vw;
+
+
+}
+#oel22 {
+     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 53vw;
+    margin: auto;
+    position: absolute;
+    z-index: -1;
+    top:18vw;
+    left: 58vw;
+
+
+}
+#oel23 {
+     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 53vw;
+    margin: auto;
+    position: absolute;
+    z-index: -2;
+    top:15.1vw;
+    left: 55vw;
+
+
+}
+#oel24 {
+     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 53vw;
+    margin: auto;
+    position: absolute;
+    z-index: -3;
+    top:12.1vw;
+    left: 52vw;
+
+
+}
+
+#oel25 {
+     background-image: url(Faerdige_svgfiler/%C3%98lperspektiv.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 53vw;
+    margin: auto;
+    position: absolute;
+    z-index: -4;
+    top:8.8vw;
+    left: 48.7vw;
+
+
+}
+
+#elefantoel {
+
+    background-image: url(Faerdige_svgfiler/Flaskeelefant.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 53vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top:8.8vw;
+    left: 85vw;
+
+
+
+}
+
+
+#game_ui {
+   background-size: cover;
+    width: 100%;
+    height: 10vw;
+    margin: auto;
+    position: absolute;
+    z-index: 0;
+    left: 1vw;
+    top: 1vw;
+
+
+
+}
+
+#heart {
+    background-image: url(Faerdige_svgfiler/Hjerte.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 53vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top: 0vw;
+    left: 2.4vw;
+
+
+
+}
+
+#heart2 {
+    background-image: url(Faerdige_svgfiler/Hjerte.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 53vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top: 0vw;
+    left: 10.4vw;
+
+
+
+}
+#heart3 {
+    background-image: url(Faerdige_svgfiler/Hjerte.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 53vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top: 0vw;
+    left: 18.4vw;
+
+
+
+}
+
+
+
+#oelpoint {
+      background-image: url(Faerdige_svgfiler/Flaskeelefant.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 2.7vw;
+    height: 53vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top: 8vw;
+    left: 5vw;
+
+}
